@@ -2,7 +2,7 @@
 
 run:
 
-`$npm install`
+`$ npm install`
 
 `$ bower install`
 
