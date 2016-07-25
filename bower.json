@@ -1,6 +1,6 @@
 {
-  "name": "loconomy",
-  "description": "a local microcasm of buy, sell and trade",
+  "name": "gulpy-jade-type",
+  "description": "A Gulp, Jade & Typescript skeleton",
   "main": "app.js",
   "authors": [
     "Alvaro Muir <@alvaromuir>"

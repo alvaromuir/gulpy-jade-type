@@ -1,7 +1,7 @@
 {
-  "name": "loconomy",
+  "name": "gulpy-jade-type",
   "version": "0.0.1",
-  "description": "a local microcasm of buy, sell and trade",
+  "description": "A Gulp, Jade & Typescript skeleton",
   "main": "app.js",
   "dependencies": {
     "foundation-sites": "^6.2.3",
