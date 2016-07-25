@@ -1,6 +1,9 @@
 # gulpy-jade-type
 
 run:
-`npm install`
+
+`$npm install`
+
 `$ bower install`
+
 `$ gulp serve`
