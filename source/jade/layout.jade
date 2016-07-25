@@ -1,0 +1,156 @@
+doctype html
+html.no-js(lang='')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    title
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='apple-touch-icon', href='apple-touch-icon.png')
+    // Place favicon.ico in the root directory
+    link(rel='stylesheet', href='assets/vendor/normalize.css')
+    link(rel='stylesheet', href='assets/stylesheets/main.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js')
+  body
+    //if lt IE 8
+      p.browserupgrade
+        | You are using an 
+        strong outdated
+        |  browser. Please 
+        a(href='http://browsehappy.com/') upgrade your browser
+        |  to improve your experience.
+    .header
+      // Sub Navigation    
+      .row
+        .medium-4.columns
+          img(src='http://placehold.it/450x90&text=LOGO', alt='company logo')
+        .medium-8.columns
+          img(src='http://placehold.it/768x90&text=Responsive Ads - muiral.com/333', alt='advertisement for deep fried Twinkies')
+      // / logo and ad break
+      br
+      .top-bar
+
+        .title-bar(data-responsive-toggle='main-menu', data-hide-for='medium')
+          button.menu-icon(type='button', data-toggle='')
+          .title-bar-title Menu
+        #main-menu.top-bar
+          ul.menu.vertical.medium-horizontal.expanded.medium-text-center(data-responsive-menu='drilldown medium-dropdown')
+            li.has-submenu
+              a(href='#') Tech
+              ul.submenu.menu.vertical(data-submenu='')
+                li
+                  a(href='#') One
+                li
+                  a(href='#') Two
+                li
+                  a(href='#') Three
+            li.has-submenu
+              a(href='#') Energy
+              ul.submenu.menu.vertical(data-submenu='')
+                li
+                  a(href='#') One
+                li
+                  a(href='#') Two
+                li
+                  a(href='#') Three
+            li.has-submenu
+              a(href='#') Space
+              ul.submenu.menu.vertical(data-submenu='')
+                li
+                  a(href='#') One
+                li
+                  a(href='#') Two
+                li
+                  a(href='#') Three
+            li.has-submenu
+              a(href='#') Medicine
+              ul.submenu.menu.vertical(data-submenu='')
+                li
+                  a(href='#') One
+                li
+                  a(href='#') Two
+                li
+                  a(href='#') Three
+            li.has-submenu
+              a(href='#') Robotics
+              ul.submenu.menu.vertical(data-submenu='')
+                li
+                  a(href='#') One
+                li
+                  a(href='#') Two
+                li
+                  a(href='#') Three
+            ul.menu
+              li
+                input(type='search', placeholder='Search')
+              li
+                button.button(type='button') Search
+    
+    br
+    
+    block content
+    
+    br
+    
+    .footer
+      .row.expanded.callout.secondary
+        .large-4.columns
+          h5 FLICKR IMAGES
+          .row.small-up-4
+            .column
+              img.thumbnail(src='http://placehold.it/75', alt='image of space dog')
+            .column
+              img.thumbnail(src='http://placehold.it/75', alt='image of space dog')
+            .column
+              img.thumbnail(src='http://placehold.it/75', alt='image of space dog')
+            .column
+              img.thumbnail(src='http://placehold.it/75', alt='image of space dog')
+            .column
+              img.thumbnail(src='http://placehold.it/75', alt='image of space dog')
+            .column
+              img.thumbnail(src='http://placehold.it/75', alt='image of space dog')
+            .column
+              img.thumbnail(src='http://placehold.it/75', alt='image of space dog')
+            .column
+              img.thumbnail(src='http://placehold.it/75', alt='image of space dog')
+        .large-4.columns
+          h5 FLICKR IMAGES
+          span.secondary.label Space
+          span.secondary.label Galaxies
+          span.secondary.label Milky Way
+          span.secondary.label Black Holes
+          span.secondary.label Rebels
+          span.secondary.label Death Star
+          span.secondary.label Republic
+          span.secondary.label R2D2
+        .large-4.columns
+          h5 RANDOM MAG
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti quam voluptatum vel repellat ab similique molestias molestiae ea omnis eos, id asperiores est praesentium, voluptate officia nulla aspernatur sequi aliquam.
+      .row.expanded
+        .medium-6.columns
+          ul.menu
+            li
+              a(href='#') Legal
+            li
+              a(href='#') Partner
+            li
+              a(href='#') Explore
+        .medium-6.columns
+          ul.menu.align-right
+            li.menu-text Copyright © today me, not you
+      |  powerful features.
+      
+  
+    script(src='https://code.jquery.com/jquery-1.12.2.min.js')
+    script(src='assets/vendor/what-input.js')
+    script(src='assets/vendor/foundation.js')
+    script.
+      window.jQuery || document.write('<script src="assets/vendor/jquery.js"><\\/script>')
+    script(src='assets/javascript/app.js')
+    // Google Analytics: change UA-XXXXX-Y to be your site's ID.
+    script.
+      window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+      ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+    script(src='https://www.google-analytics.com/analytics.js', async='', defer='')

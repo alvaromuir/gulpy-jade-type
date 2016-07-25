@@ -1,9 +1,10 @@
 /* File: gulpfile.js */
 
 // grab our gulp packages
-var os = require('os'),
+const os = require('os'),
     gulp = require('gulp'),
     gutil = require('gulp-util'),
+    autoprefixer = require('gulp-autoprefixer'),
     jade = require('gulp-jade'),
     ts = require('gulp-typescript'),
     jshint = require('gulp-jshint'),
@@ -13,11 +14,12 @@ var os = require('os'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
     mainBowerFiles = require('main-bower-files'),
+    imagemin = require('gulp-imagemin'),
     connect = require('gulp-connect'),
     open = require('gulp-open');
 
 
-var sassPaths = [
+const sassPaths = [
     'bower_components/foundation-sites/scss/',
     'bower_components/motion-ui/',
 ]
@@ -32,7 +34,10 @@ gulp.task('connect', function() {
 
 gulp.task('build-html', function() {
     return gulp.src('source/jade/**/*.jade')
-        .pipe(jade())
+        .pipe(jade({
+          pretty: true,
+          }
+        ))
         .pipe(gulp.dest('public/'))
 })
 
@@ -62,6 +67,15 @@ gulp.task('build-css', function() {
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('public/assets/stylesheets'));
 });
+
+gulp.task('prefixer', () =>
+    gulp.src('public/assets/stylesheets/*.css/')
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(gulp.dest('public/assets/stylesheets/'))
+);
 
 gulp.task('minify-css', function() {
   return gulp.src('public/assets/stylesheets/*.css')
@@ -93,9 +107,18 @@ gulp.task('watch', function() {
     gulp.watch('source/jade/**/*.jade', ['build-html']);
     gulp.watch('source/scss/**/*.scss', ['build-css']);
     gulp.watch('public/assets/stylesheets/*.css', ['minify-css']);
+    gulp.watch('source/typescript/**/*.ts', ['type-script']);
+    gulp.watch('assets/images/**/*.js', ['image-min']);
     gulp.watch('source/javascript/**/*.js', ['jshint']);
     gulp.watch('public/**/*', ['livereload']);
 });
+
+
+gulp.task('image-min', () =>
+    gulp.src('assets/images/**/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('assets/images'))
+);
 
 
 gulp.task('open', function(){
@@ -125,7 +148,7 @@ gulp.task('uri', function(){
 gulp.task('app', function(){
   var options = {
     uri: 'http://localhost:3000',
-    app: 'safari'
+    app: 'google chrome'
   };
   gulp.src(__filename)
   .pipe(open(options));
@@ -133,5 +156,5 @@ gulp.task('app', function(){
 
 
 gulp.task('view', ['open', 'uri', 'app', 'browser']);
-gulp.task('default', ['connect', 'watch', 'bower-files', 'build-html', 'type-script','jshint', 'build-js', 'build-css', 'minify-css']);
-gulp.task('serve', ['watch', 'connect', 'view'])
+gulp.task('default', ['connect', 'watch', 'bower-files', 'build-html', 'type-script','jshint', 'build-js', 'build-css', 'minify-css', 'prefixer','image-min']);
+gulp.task('serve', ['default','watch', 'connect', 'view'])

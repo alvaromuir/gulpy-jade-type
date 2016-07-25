@@ -1,32 +1,234 @@
-doctype html
-html.no-js(lang='')
-  head
-    meta(charset='utf-8')
-    meta(http-equiv='x-ua-compatible', content='ie=edge')
-    title
-    meta(name='description', content='')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(rel='apple-touch-icon', href='apple-touch-icon.png')
-    // Place favicon.ico in the root directory
-    link(rel='stylesheet', href='assets/vendor/normalize.css')
-    link(rel='stylesheet', href='assets/stylesheets/main.css')
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js')
-  body
-    //if lt IE 8
-      p.browserupgrade
-        | You are using an 
-        strong outdated
-        |  browser. Please 
-        a(href='http://browsehappy.com/') upgrade your browser
-        |  to improve your experience.
-    // Add your site or application content here
-    p Hello world! This is HTML5 Boilerplate!!
-    script(src='https://code.jquery.com/jquery-1.12.2.min.js')
-    script.
-      window.jQuery || document.write('<script src="/assets/javascript/vendor/jquery/jquery-1.12.2.min.js"><\\/script>')
-    script(src='assets/javascript/main.js')
-    // Google Analytics: change UA-XXXXX-Y to be your site's ID.
-    script.
-      window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-      ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-    script(src='https://www.google-analytics.com/analytics.js', async='', defer='')
+extends layout
+
+block content
+  .row
+    .medium-8.columns
+      p
+        img(src='http://placehold.it/900x450&text=Promoted Article', alt='main article image')
+    .medium-4.columns
+      p
+        img(src='http://placehold.it/400x200&text=Other cool article', alt='article promo image')
+      p
+        img(src='http://placehold.it/400x200&text=Other cool article', alt='article promo image')
+  hr
+  .row.column
+    h4.text-center(style='margin: 0;') BREAKING NEWS
+  hr
+  .row.small-up-3.medium-up-4.large-up-5
+    .column
+      img(src='http://placehold.it/400x370&text=Look at me!', alt='image for article')
+    .column
+      img(src='http://placehold.it/400x370&text=Look at me!', alt='image for article')
+    .column
+      img(src='http://placehold.it/400x370&text=Look at me!', alt='image for article')
+    .column.show-for-medium
+      img(src='http://placehold.it/400x370&text=Look at me!', alt='image for article')
+    .column.show-for-large
+      img(src='http://placehold.it/400x370&text=Look at me!', alt='image for article')
+  hr
+  .row.column
+    h4.text-center(style='margin: 0;') LATEST STORIES
+  hr
+  .row
+    .large-8.columns(style='border-right: 1px solid #E3E5E8;')
+      article
+        .row
+          .large-6.columns
+            p
+              img(src='http://placehold.it/600x370&text=Look at me!', alt='image for article')
+          .large-6.columns
+            h5
+              a(href='#') 'Death Star' Vaporizes Its Own Planet
+            p
+              span
+                i.fi-torso  By Thadeus   
+              span
+                i.fi-calendar  11/23/16   
+              span
+                i.fi-comments  6 comments
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae impedit beatae, ipsum delectus aperiam nesciunt magni facilis ullam.
+        hr
+        .row
+          .large-6.columns
+            p
+              img(src='http://placehold.it/600x370&text=Look at me!', alt='image for article')
+          .large-6.columns
+            h5
+              a(href='#') NASA's SLS Rocket Sheds Saturn V Color Scheme in Design Review
+            p
+              span
+                i.fi-torso  By Thadeus   
+              span
+                i.fi-calendar  11/23/16   
+              span
+                i.fi-comments  6 comments
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae impedit beatae, ipsum delectus aperiam nesciunt magni facilis ullam.
+        hr
+        .row
+          .large-6.columns
+            p
+              img(src='http://placehold.it/600x370&text=Look at me!', alt='image for article')
+          .large-6.columns
+            h5
+              a(href='#') Ingredients for Life Were Always Present on Earth, Comet Suggests
+            p
+              span
+                i.fi-torso  By Thadeus   
+              span
+                i.fi-calendar  11/23/16   
+              span
+                i.fi-comments  6 comments
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae impedit beatae, ipsum delectus aperiam nesciunt magni facilis ullam.
+        hr
+        .row
+          .large-6.columns
+            p
+              img(src='http://placehold.it/600x370&text=Look at me!', alt='image for article')
+          .large-6.columns
+            h5
+              a(href='#') Astronaut's Watch Worn on the Moon Sells for Record $1.6 Million
+            p
+              span
+                i.fi-torso  By Thadeus   
+              span
+                i.fi-calendar  11/23/16   
+              span
+                i.fi-comments  6 comments
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae impedit beatae, ipsum delectus aperiam nesciunt magni facilis ullam.
+        hr
+        .row
+          .large-6.columns
+            p
+              img(src='http://placehold.it/600x370&text=Look at me!', alt='image for article')
+          .large-6.columns
+            h5
+              a(href='#') Interstellar Dust on the Galaxy's Magnetic Field | Space Wallpaper
+            p
+              span
+                i.fi-torso  By Thadeus   
+              span
+                i.fi-calendar  11/23/16   
+              span
+                i.fi-comments  6 comments
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae impedit beatae, ipsum delectus aperiam nesciunt magni facilis ullam.
+        hr
+        .row
+          .large-6.columns
+            p
+              img(src='http://placehold.it/600x370&text=Look at me!', alt='image for article')
+          .large-6.columns
+            h5
+              a(href='#') Explore the Moon (Virtually) with These Awesome Global Maps
+            p
+              span
+                i.fi-torso  By Thadeus   
+              span
+                i.fi-calendar  11/23/16   
+              span
+                i.fi-comments  6 comments
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae impedit beatae, ipsum delectus aperiam nesciunt magni facilis ullam.
+        hr
+        .row
+          .large-6.columns
+            p
+              img(src='http://placehold.it/600x370&text=Look at me!', alt='image for article')
+          .large-6.columns
+            h5
+              a(href='#') Best Space Books and Sci-Fi: A Space.com Reading List
+            p
+              span
+                i.fi-torso  By Thadeus   
+              span
+                i.fi-calendar  11/23/16   
+              span
+                i.fi-comments  6 comments
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae impedit beatae, ipsum delectus aperiam nesciunt magni facilis ullam.
+        hr
+        ul.pagination(role='navigation', aria-label='Pagination')
+          li.disabled
+            | Previous 
+            span.show-for-sr page
+          li.current
+            span.show-for-sr You're on page
+            |  1
+          li
+            a(href='#', aria-label='Page 2') 2
+          li
+            a(href='#', aria-label='Page 3') 3
+          li
+            a(href='#', aria-label='Page 4') 4
+          li
+            a(href='#', aria-label='Next page')
+              | Next 
+              span.show-for-sr page
+    .large-4.columns
+      aside
+        .row.small-up-3
+          .column.text-center
+            i.fi-social-facebook
+            h6 56,009
+            p
+              small FOLLOWERS
+            br
+          .column.text-center
+            i.fi-social-twitter
+            h6 76,905
+            p
+              small FOLLOWERS
+            br
+          .column.text-center
+            i.fi-social-instagram
+            h6 34,099
+            p
+              small FOLLOWERS
+            br
+          .column.text-center
+            i.fi-social-tumblr
+            h6 13,765
+            p
+              small FOLLOWERS
+          .column.text-center
+            i.fi-social-pinterest
+            h6 9,283
+            p
+              small FOLLOWERS
+          .column.text-center
+            i.fi-social-youtube
+            h6 99,000
+            p
+              small FOLLOWERS
+        br
+        .row.column
+          p.lead FROM OUR FRIENDS
+          p
+            img(src='http://placehold.it/400x300&text=Buy Me!', alt='advertisement of ShamWow')
+        br
+        .row.column
+          p.lead TRENDING POSTS
+          .media-object
+            .media-object-section
+              img.thumbnail(src='http://placehold.it/100')
+            .media-object-section
+              h5 All I need is a space suit and I'm ready to go.
+          .media-object
+            .media-object-section
+              img.thumbnail(src='http://placehold.it/100')
+            .media-object-section
+              h5 Are the stars out tonight? I don't know if it's cloudy or bright.
+          .media-object
+            .media-object-section
+              img.thumbnail(src='http://placehold.it/100')
+            .media-object-section
+              h5 And the world keeps spinning.
+          .media-object
+            .media-object-section
+              img.thumbnail(src='http://placehold.it/100')
+            .media-object-section
+              h5 Cold hearted orb that rules the night.
