@@ -1,0 +1,32 @@
+{
+  "name": "loconomy",
+  "description": "a local microcasm of buy, sell and trade",
+  "main": "app.js",
+  "authors": [
+    "Alvaro Muir <@alvaromuir>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "economics",
+    "ecommerce",
+    "trade",
+    "local",
+    "shop",
+    "jobs",
+    "barter"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation-sites": "^6.2.3",
+    "normalize-css": "normalize.css#^4.2.0",
+    "motion-ui": "^1.2.2"
+  }
+}
